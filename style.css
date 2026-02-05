@@ -111,7 +111,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(image/unchecked.png);
+    background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
 }
@@ -124,7 +124,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-      background-image: url(image/checklist.png);
+      background-image: url(checklist.png);
 
       
 }
@@ -145,4 +145,5 @@ ul li span:hover{
     background-color: rgb(127, 129, 255);
     border-radius: 50%;
    
+
 }

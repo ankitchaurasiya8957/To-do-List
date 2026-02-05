@@ -1,0 +1,148 @@
+
+body{
+    padding: 0;
+    margin: 0;
+background: linear-gradient(135deg, red, black);
+}
+
+
+.container1{
+ background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    min-height: 500px;           /* changed: allow flexible height */
+    width: 550px;
+    margin: 200px 400px;
+    max-width: 540px;
+    padding: 24px;               /* added: inner spacing so content doesn't overlap */
+    box-sizing: border-box;
+  
+   
+}
+
+.heading{
+  position: relative;
+  left: 25%;
+  top: 3px;
+  color:rgb(68, 68, 245);
+  font-size: 44px;
+}
+
+.Add{
+margin-top: 10%;  /* place input/button with space below */
+margin-left: 6%;
+}
+    
+
+.add-btn{
+    height: 40px;
+    width:90px;
+    color:white;
+    border:2px solid rgb(102, 102, 255);
+    border-radius: 7px;
+    background-color: rgb(102, 102, 255);
+    border-radius: 7px;
+    margin-left: 0%;
+}
+
+#input{
+    position: relative;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    gap: inherit;
+    border-color: rgb(102, 102, 255);
+ right :20px;
+}
+
+.task{
+      width:90%;
+    min-height:50px;             /* use min-height instead of fixed height */
+    border-bottom: dotted rgb(116, 114, 114);
+    border-radius: 5px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px auto;            /* fixed typo: '10 px' -> '10px' */
+    padding: 8px 16px;
+}
+
+
+#checkbox{
+    height:35px;
+width: 35px;
+
+}
+
+ul {
+    margin-top: 8px;             /* ensure list starts below the Add section */
+    padding-left: 5;
+}
+  
+
+.remove-btn{
+    border: white;
+    background-color: red;
+    color:white;
+    border-radius: 3px;
+    height:28px;
+position: relative;
+top:10px;
+right:10px;
+}
+
+
+ul li {
+
+    list-style: none;
+    font-size: 17px;
+    padding:9px 10px;
+    user-select: none;
+    cursor: pointer;
+ 
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    left: -34px;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(image/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+ul li.checked{
+    color: gray ;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+      background-image: url(image/checklist.png);
+
+      
+}
+
+
+ul li span{
+    position: absolute;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    color: white;
+    background-color: rgb(127, 129, 255);
+    border-radius: 50%;
+   
+}
